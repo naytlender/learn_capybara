@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+Item name: <%= @item.name %>
+</br>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
+<%= link_to 'Delete', @item, method: :delete, data: {confirm: 'Are you sure?'} %>
